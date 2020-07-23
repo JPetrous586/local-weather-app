@@ -11,7 +11,7 @@ jobs:
           keys:
             - v1-dependencies-{{checksum "package-lock.json"}}
       - run: npm ci
-      - run: cd ./node_modules/protractor && npm i webdrivermanager@latest
+      - run: cd ./node_modules/protractor && npm i webdriver-manager@latest
       - save_cache:
           paths:
             - ~/.npm
